@@ -1,0 +1,115 @@
+.rounded-body{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+.rounded-body > h1,h3,h5{
+    font-family: "Source Sans Pro", sans-serif;
+    color: #707070;
+    margin-top: 30px;
+}
+.envelope{
+    position: relative;
+    width: calc(1080px/3);
+    height: calc(1920px/3);
+    margin: auto;
+    margin-top: 10vh;
+}
+.envelope:hover{
+    transition: 0.5s;
+    cursor: pointer;
+}
+.envelope > img{
+    position: absolute;
+    user-select: none;
+}
+#head-en{
+    transition: 0.5s;
+    z-index: 3;
+}
+#head-en:hover{
+    transition: 0.5s;
+    transform: rotateX(70deg);
+    transform: translateY(-15px);
+}
+#body-en{
+    z-index: 2;
+}
+.body-en-hide{
+    transition: 0.2s;
+    opacity: 0;
+}
+
+#letter{
+    transition: 0.5s;
+    z-index: 1;
+}
+.letter-active{
+    transition: 0.5s;
+    transform: translateY(-100px);
+    border: 1px solid black;
+}
+@keyframes scale{
+    0%{transform: scale(1);}
+    100%{transform: scale(100);}
+}
+.letter-final{
+    transition: 5s;
+    animation: scale;
+    animation-duration: 5s;
+    transform: scale(100);
+
+}
+.main-sub{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#nap{
+    position: absolute;
+    width: 25%;
+    z-index: 6;
+}
+#than{
+    position: absolute;
+    width: 25%;
+    z-index: 5;
+}
+.header{
+    position: relative;
+}
+.footer{
+    margin-top: 200px;
+}
+#tet-advertise{
+    width: 70%;
+    margin: auto;
+    margin-top: 15vh;
+}
+#claim-text{
+    margin-top: 2vh;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: large;
+}
+
+@keyframes fade {
+    0% {opacity: .4} 
+    50% {opacity: 1}
+    100%{opacity: .4}
+}
+
+.blur_fx{
+    transition: 0.2s;
+    background-color: white;
+    display: block;
+    z-index: 100;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    animation-name: fade;
+    animation-duration: 0.2s;
+    opacity: 0;
+}

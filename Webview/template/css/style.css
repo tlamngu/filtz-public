@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  z-index: 1000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(146, 8, 21, 0.5);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f7d17d;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+/*GLOBAL*/
+.special-red-btn {
+  background-color: #920815;
+  min-width: 100px;
+  min-height: 50px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  transition: 0.2s;
+}
+.special-red-btn > p {
+  color: #f7d17d;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  margin: auto;
+}
+.special-red-btn:hover {
+  transition: 0.2s;
+  background-color: #a80818;
+  cursor: pointer;
+}
+.lineInput > p{
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: small;
+    width: 100%;
+    margin: 0;
+}
+.lineInput > input{
+    width: 100%;
+    height: 70%;
+    border: none;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: large;
+    border-bottom: 1px solid #707070;
+
+}
+.lineInput > input:focus{
+    outline: none;
+}
+.textaera-input > p{
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: small;
+    width: 100%;
+    margin: 0;
+}
+.textaera-input > textarea{
+    resize: none;
+    width: 100%;
+    border: none;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: large;
+    border: 1px solid #707070;
+    border-radius: 10px;
+}
+.textaera-input > textarea:focus{
+    outline: none;
+}
+
+.fileInput_image{
+    position: relative;
+    margin: 0;
+
+}
+.fileInput_image > input{
+  width: 100%;
+  height: 100%;
+  position: relative;
+	text-align: right;
+	opacity: 0;
+	z-index: 2;
+}
+.fileInput_image > img{
+    position: absolute;
+    z-index: 5;
+}
+.fileInput_image .fakefile {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+.fakefile > img{
+    width: 100%;
+    height: 100%;
+}
+
+/*MAIN*/
+.main {
+  position: relative;
+  height: 100%;
+  width: 100vw;
+}
+.main .ontop-layer_unactive {
+  transition: 0.5s;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: none;
+}
+.main .ontop-layer_active {
+  transition: 0.5s;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: block;
+}
+.header-ghost {
+  width: 100vw;
+  height: 65px;
+}
+.main .header {
+  transition: 0.5s;
+  width: 100vw;
+  height: 65px;
+  display: flex;
+}
+
+.header > img {
+  justify-content: flex-start;
+}
+.header > img:hover {
+  cursor: pointer;
+}
+.header .header-navigate {
+  width: 92.5vw;
+  height: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  margin-left: 5vw;
+}
+.header-navigate > a {
+  text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  color: #920815;
+}
+.main .rounded-body {
+  min-height: 90vh;
+  width: 95vw;
+  border-radius: 30px;
+  background-color: white;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.main .rectangular-body{
+  width: 90vw;
+  background-color: white;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;}
+
+.main .footer {
+  width: 100vw;
+  height: 70vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .footer-wave {
+  width: 100%;
+  bottom: 0;
+}
+.footer .line-split {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  border-bottom: 0.5px solid #707070;
+}
+.footer > a {
+  text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  color: #920815;
+}
+
+/* SPECIAL */
+.relative {
+  transition: 0.2s;
+  position: relative;
+}
+@keyframes header-pull {
+  from {
+    top: -100;
+  }
+  to {
+    top: 0;
+  }
+}
+.sticky-header {
+  transition: 0.2s;
+  animation: header-pull 2s;
+  position: fixed;
+  background-color: #f7d17d;
+  opacity: 0.9;
+  border-bottom: 1px solid #707070;
+  padding-bottom: 10px;
+  top: 0;
+}

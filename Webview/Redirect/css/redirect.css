@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+.rounded-body{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.rounded-body > h1{
+    font-family: "Source Sans Pro", sans-serif;
+    color: #707070;
+}
+.rounded-body .Link{
+    transition: 0.2s;
+    margin: 15px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #707070;
+    display: flex;
+    width: 90%;
+    border: 1px solid #707070;
+    padding: 5px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+.rounded-body .Link:hover{
+    transition: 0.2s;
+    background-color: #afafaf69;
+    cursor: pointer;
+}
+.rounded-body .ghost{
+    margin-bottom: 25%;
+}

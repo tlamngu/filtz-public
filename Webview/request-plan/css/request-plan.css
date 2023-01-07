@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+.rounded-body{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.rounded-body > h1{
+    font-family: "Source Sans Pro", sans-serif;
+}
+.lineInput{
+    margin-top: 25px;
+}

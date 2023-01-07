@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtz gift platform</title>
+    <link rel="stylesheet" href="/require/Webview+template+css+style.css">
+    <link rel="stylesheet" href="/require/Webview+manager-space+css+manager.css">
+    <link rel="shortcut icon" href="/require/data+img+dmz-tet.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="ontop-layer" style="display: none;">
+
+        </div>
+        <div class="header">
+            <img src="/require/data+img+Filtz-logo.png" height="100%" onclick="window.open('/home','_self')">
+            <div class="header-navigate">
+                <a href="/about-us"><strong>ABOUT US</strong></a>
+                <a href="/create"><strong>CREATE</strong></a>
+                <a href="/recieve"><strong>RECIEVE</strong></a>
+            </div>
+        </div>
+        <div class="rounded-body">
+            <h1>Gift manager space</h1>
+            <h3>Gift link generator:</h3>
+            <div class="GiftManager">
+                <p>Gift list:</p>
+                <div class="select">
+                    <label for="select-all">Select all: </label> <input type="checkbox" id="select-all" onclick="gift_link_select_all(this)">
+                </div>
+                <div class="gift-display">
+                    <div class="gift-show" id="gift_link_gen_gift_list">
+                        
+                    </div>
+                </div>
+            </div>
+            <p style="height: 1%;"></p>
+            <div class="lineInput" style="width: 90%; height: 50px;">
+                <p>Enter partner name:</p>
+                <input type="text" id="link_gen_partner_name">
+            </div>
+            <button class="btn-blacked" onclick="gen_link()">Generate gift link</button>
+            <!-- ------------------------------------------------------- -->
+            <h3>View analytics:</h3>
+            <div class="GiftManager">
+                <p>Gift list:</p>
+                <div class="select">
+                    <div class="gift-display">
+                        <div class="gift-show" id="Gift_analytics_display">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------------------------------- -->
+            <h3>Gift owner:</h3>
+            <div class="GiftManager">
+                <p>Gift list:</p>
+                <div class="select">
+                    <div class="gift-display">
+                        <div class="gift-show" id="Gift_ownerList_display">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-blacked" id="Excel_export">Export</button>
+
+            <div class="Link" onclick="window.open('/about-us','_self')">
+                <h2>USER SECURITY & LICENSE</h2>
+                <img src="/require/data+img+paper-plane.png" alt="" width="50px" height="50px">
+            </div>
+            <div class="Link" onclick="window.open('/guide','_self')">
+                <h2>GUIDE</h2>
+                <img src="/require/data+img+paper-plane.png" alt="" width="50px" height="50px">
+            </div>
+            
+            <button class="btn-blacked" style="background-color: rgb(167, 0, 0);margin-top: 10vh;">End this program</button>
+
+            <h5>Gift pack exp: dd/mm/yy</h5>
+        </div>
+        <div class="footer">
+            <p class="line-split"></p>
+            <img src="/require/data+img+filtz.png" alt="" width="150px">
+            <a href="https://www.facebook.com/wpil.lampi"><strong>Facebook</strong></a>
+            <a href="/about-us"><strong>About us</strong></a>
+            <a href="/about-us"><strong>Contact</strong></a>
+            <a href="/about-us"><strong>Security</strong></a>
+            <a><strong>© Copyright 2022 | Filtz, Radiant team</strong></a>
+            <img src="/require/data+img+double-wave.png" class="footer-wave">
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="/require/Webview+manager-space+js+manager.js"></script>
+    <script src="/require/Webview+template+js+main.js"></script>
+</body>
+
+</html>

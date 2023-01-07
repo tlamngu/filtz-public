@@ -1,0 +1,69 @@
+#letter{
+    margin-top: 30px;
+    background-color: #F1C558;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 30px;
+}
+#gift-panel{
+    margin-top: 100px;
+    background-color: #920815;
+    min-height: 60vh;
+    padding: 30px;
+}
+#letter_to{
+    margin-top: 50px;
+}
+#letter > p{
+    font-family: "Source Sans Pro", sans-serif;
+    width: 90%;
+    height: 90%;
+    font-size: x-large;
+}
+#e-sign{
+    text-align: right;
+}
+.gift-line{
+    max-width: 1320px;
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.gift-line .gift{
+    width: 350px;
+    background-color: #F7D17D;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+.gift > img{
+    margin-top: 5%;
+    width: 70%;
+}
+.gift > h2{
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: x-large;
+    color: #920815;
+    text-align: center;
+}
+.gift .gift-selection{
+    color: #F7D17D;
+    background-color: #920815;
+    width: 50%;
+    height: 50px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: x-large;
+    margin-bottom: 5%;
+    margin-top: 10%;
+    border: none;
+}
+.gift-selection:hover{
+    background-color: #ac0d1c;
+    cursor: pointer;
+}

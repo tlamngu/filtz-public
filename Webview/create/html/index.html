@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtz gift platform</title>
+    <link rel="stylesheet" href="/require/Webview+template+css+style.css">
+    <link rel="stylesheet" href="/require/Webview+create+css+create.css">
+    <link rel="shortcut icon" href="/require/data+img+dmz-tet.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="ontop-layer" style="display: none;">
+
+        </div>
+        <div class="header">
+            <img src="/require/data+img+Filtz-logo.png" height="100%" onclick="window.open('/home','_self')">
+            <div class="header-navigate">
+                <a href="/about-us"><strong>ABOUT US</strong></a>
+                <a href="/create"><strong>CREATE</strong></a>
+                <a href="/recieve"><strong>RECIEVE</strong></a>
+            </div>
+        </div>
+        <div class="rounded-body">
+            <div class="plan-title">
+                PLAN - FREE
+            </div>
+            <img src="/require/data+img+plan-free.png" alt="" style="margin-bottom: 150px; " id="plan-info">
+        </div>
+        <div class="rounded-body" style="justify-content: space-around;">
+            <div class="form-title">
+                CREATE GIFT
+            </div>
+            <div class="lineInput" style="width: 90%; height: 50px;">
+                <p>Gift title (this will display as title of page):</p>
+                <input type="text" id="Title_input">
+            </div>
+            <div class="lineInput" style="width: 90%; height: 50px;">
+                <p>Enter e-mail:</p>
+                <input type="email" id="email_input">
+            </div>
+            <div class="lineInput" style="width: 90%; height: 50px;">
+                <p>Enter your name:</p>
+                <input type="text" id="AuthorName">
+            </div>
+            <div class="textaera-input" style="width: 90%;">
+                <p>Enter your letter (10 line & 1000 character limit):</p>
+                <textarea name="" id="letter_input" cols="70" rows="10" maxlength="1000"></textarea>
+            </div>
+            <div class="GiftManager">
+                <p>Gift list:</p>
+                <div class="gift-display">
+                    <div class="gift-show">
+                        
+                    </div>
+                    <div class="giftInput">
+                        <input type="text" id="gift_name_input">
+                        <div class="fileInput_image" style="width: 40px; height: 40px;">
+                            <input type="file" accept=".jpg, .png" id="image_uploader" onchange="uploadImg()">
+                            <div class="fakefile">
+                                <img src="/require/data+img+canera-icon.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gift-option">
+                        <div class="option">
+                            <label for="gift-amount">Amount: </label>
+                            <input type="text" id="gift-amount" class="number gift-amount">
+                        </div>
+                        <div class="option">
+                            <label for="random-toggle">Allow random: </label>
+                            <input type="checkbox" id="random-toggle">
+                        </div>
+                    </div>
+                    <button class="add-gift-btn" id="add_gift">Add</button>
+                </div>
+            </div>
+
+            <p>By click create, you will agree with our <a href="/about-us">Term of use</a>.</p>
+            <button class="Create-gift" id="create">Create</button>
+        </div>
+        <div class="footer">
+            <p class="line-split"></p>
+            <img src="/require/data+img+filtz.png" alt="" width="150px">
+            <a href="https://www.facebook.com/wpil.lampi"><strong>Facebook</strong></a>
+            <a href="/about-us"><strong>About us</strong></a>
+            <a href="/about-us"><strong>Contact</strong></a>
+            <a href="/about-us"><strong>Security</strong></a>
+            <a><strong>© Copyright 2022 | Filtz, Radiant team</strong></a>
+            <img src="/require/data+img+double-wave.png" class="footer-wave">
+        </div>
+    </div>
+    <script src="/require/Webview+create+js+create.js"></script>
+    <script src="/require/Webview+template+js+main.js"></script>
+</body>
+
+</html>

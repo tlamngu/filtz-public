@@ -1,0 +1,25 @@
+.rounded-body{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.rounded-body > h1,h3,h5{
+    font-family: "Source Sans Pro", sans-serif;
+    color: #707070;
+    margin-top: 30px;
+}
+.rounded-body > input{
+    margin-top: 50px;
+    width: 90vw;
+    height: 2.5vw;
+    border-radius: 10px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: x-large;
+    text-align: center;
+}
+.rounded-body > p{
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: large;
+    color: #707070;
+    text-align: center;
+}

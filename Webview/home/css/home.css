@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+.rounded-body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.plan{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+.plan .plan-box{
+    width: 310px;
+    height: 485px;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.plan-box .plan-title{
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: x-large;
+    margin-top: 10px;
+}
+.plan-box > img{
+    margin: auto;
+}

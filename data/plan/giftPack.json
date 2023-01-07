@@ -1,0 +1,60 @@
+[
+    {
+        "Token": "ee0f7992-f0a4-489e-84b5-b378a2daf700",
+        "Title": "Phần quà đầu tiên trong Filtz",
+        "Email": "tlammail88@gmail.com",
+        "Author": "Zeak Nguyễn",
+        "Letter": "Phần quà đầu tiên trong Filtz\nPhần quà đầu tiên trong Filtz\nPhần quà đầu tiên trong Filtz\nPhần quà đầu tiên trong FiltzPhần quà đầu tiên trong FiltzPhần quà đầu tiên trong FiltzPhần quà đầu tiên trong Filtz\nPhần quà đầu tiên trong FiltzPhần quà đầu tiên trong Filtz\n\nPhần quà đầu tiên trong FiltzPhần quà đầu tiên trong FiltzPhần quà đầu tiên trong Filtz\nPhần quà đầu tiên trong FiltzPhần quà đầu tiên trong FiltzPhần quà đầu tiên trong FiltzPhần quà đầu tiên trong Filtz\nPhần quà đầu tiên trong FiltzPhần quà đầu tiên trong FiltzPhần quà đầu tiên trong Filtz",
+        "License": "free",
+        "giftPack": [
+            {
+                "Name": "Gift - 1",
+                "Amount": 82,
+                "ImageURL": "/require/data+img+gift-img-default.png",
+                "ID": 0
+            },
+            {
+                "Name": "Gift - 2",
+                "Amount": 97,
+                "ImageURL": "/require/data+img+gift-img-default.png",
+                "ID": 1
+            },
+            {
+                "Name": "Gift - 3",
+                "Amount": 97,
+                "ImageURL": "/require/data+img+gift-img-default.png",
+                "ID": 2
+            }
+        ],
+        "owner-mail": [
+            {
+                "id": "0",
+                "owner": [
+                    "tlamngu@outlook.com",
+                    "tlamngu@outlook.com",
+                    "tlamngu@outlook.com"
+                ]
+            },
+            {
+                "id": "1",
+                "owner": [
+                    "tlamngu@outlook.com",
+                    "tlamngu@outlook.com",
+                    "tlamngu@outlook.com"
+                ]
+            },
+            {
+                "id": "2",
+                "owner": [
+                    "tlamngu@outlook.com",
+                    "tlamngu@outlook.com",
+                    "tlamngu@outlook.com"
+                ]
+            }
+        ],
+        "binding": [
+            "e5527600-5d27-457b-8abb-62db872b4c76",
+            "7f7e2871-25cb-4add-a74b-2253645a24bc"
+        ]
+    }
+]
